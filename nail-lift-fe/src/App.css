@@ -6,6 +6,9 @@
 
 .App {
     text-align: center;
+    min-width: 0;
+    max-width: 1380px;
+    margin: auto;
 }
 
 .App-logo {
@@ -90,6 +93,10 @@
 
 .main-wrapper {
     padding: 0 7%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
 }
 
 .main-wrapper h1 {
@@ -99,4 +106,29 @@
     margin: 0;
     padding-bottom: 2rem;
     color: var(--dark);
+}
+
+.main-text p {
+    font-family: Semibold;
+    font-size: 2.1rem;
+    text-align: left;
+}
+
+.puddle-image {
+    width: 100%;
+    height: auto;
+}
+
+.img-wrapper {
+    width: 100%;
+}
+
+.group-photo-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.group-photo-wrapper img {
+    width: 40%;
 }
